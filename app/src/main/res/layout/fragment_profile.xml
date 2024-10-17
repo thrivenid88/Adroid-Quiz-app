@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Section -->
+
+        <TextView
+            android:id="@+id/tvProfileTitle"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/baseline_edit_24"
+            />
+
+
+            <ImageView
+                android:id="@+id/ivProfileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/drop_down"
+                android:paddingTop="0dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/baseline_person_24" />
+            <TextView
+                android:id="@+id/tvChangeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="change image"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:clickable="true"
+             />
+
+
+        <EditText
+            android:id="@+id/ed_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:background="@drawable/custom_edittext"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/ed_Dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="DOB:DD/MM/YYYY"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edittext"/>
+
+        <EditText
+            android:id="@+id/ed_Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edittext" />
+
+        <EditText
+            android:id="@+id/ed_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edittext"/>
+
+
+        <!-- About Section -->
+        <TextView
+            android:id="@+id/tv_About"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/ed_AboutContent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#DDDDDD"
+            android:padding="8dp"
+            android:paddingBottom="16dp"
+            android:textColor="@color/black"
+            android:hint="" />
+
+        <!-- Update Password Section -->
+        <TextView
+            android:id="@+id/tv_UpdatePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Password"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:paddingTop="8dp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Reset Password Section -->
+        <TextView
+            android:id="@+id/tv_ResetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Duolingo Account Link Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_DuolingoId"
+                android:layout_width="160dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:hint="Duolingo ID "
+                android:paddingTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_edittext"/>
+
+            <Button
+                android:id="@+id/btnLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:text="Link Account"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+                <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Logout"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Question type"
+            android:textColor="@color/black" />
+        <Spinner
+            android:id="@+id/question_type_array"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_background"
+            android:paddingEnd="10dp"
+
+            android:layout_gravity="center"
+            android:padding="10dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="levels"
+            android:textColor="@color/black"
+            android:padding="3dp"/>
+
+        <Spinner
+            android:id="@+id/level_array"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:textColor="#000000"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center"
+
+            android:background="@drawable/spinner_background"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:textColor="@color/black"
+            android:padding="3dp"/>
+
+        <EditText
+            android:id="@+id/editTextQuestion"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+
+            android:hint="Enter Question" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:textColor="@color/black"
+            android:padding="3dp"/>
+
+        <EditText
+            android:id="@+id/editTextOptions"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Enter Options"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:textColor="@color/black"
+            android:padding="3dp"/>
+
+        <EditText
+            android:id="@+id/editTextAnswer"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Enter Correct Answer"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/buttonPost"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"
+            android:text="Post Question" />
+
+        <Button
+            android:id="@+id/buttonDiscard"
+            android:text="Discard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <ListView
+            android:id="@+id/listViewPostedQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</ScrollView>

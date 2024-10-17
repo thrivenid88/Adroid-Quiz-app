@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="post_question">Post Question</string>
+    <string name="profile">Profile</string>
+    <string name="welcome_message">Welcome, %1$s!</string>
+    <string name="sentence_of_the_day">Sentence of the Day: %1$s</string>
+        <!-- Scores -->
+    <string name="scores_text">%1$d pts</string>
+
+        <!-- Current Streak -->
+    <string name="current_streak">Current streak: %1$d</string>
+
+        <!-- Highest Streak -->
+    <string name="highest_streak">Highest streak: %1$d</string>
+
+        <!-- Avg Time Spent -->
+    <string name="avg_time_spent">Avg time spent: %1$s/day</string>
+    <string name="vocabulary_level">VocabularyLevel</string>
+    <string name="send_button_text">type message</string>
+    <string name="create_poll_button_text">Create Poll</string>
+    <string name="message_hint">Type your message</string>
+    <string name="Message">your message</string>
+    <string name="sendButton">Send</string>
+        <!-- Category Array -->
+        <string-array name="category_array">
+            <item>quiz</item>
+            <item>query</item>
+            <item>study_material</item>
+        </string-array>
+
+        <!-- Level Array -->
+        <string-array name="level_array">
+            <item>A1</item>
+            <item>A2</item>
+            <item>B1</item>
+            <item>B2</item>
+            <item>C1</item>
+            <item>C2</item>
+        </string-array>
+
+        <!-- Question Type Array -->
+        <string-array name="question_type_array">
+            <item>MCQ</item>
+            <item>one word</item>
+            <item>paragraph</item>
+            <item>multiple select</item>
+        </string-array>
+
+    <string name="score">Score: %1$d/10</string>
+    <string name="EnterQuestion">Enter Question</string>
+    <string name="EnterOptions">Enter Options</string>
+    <string name="EnterAnswer">Enter answer</string>
+</resources>
+
+
+

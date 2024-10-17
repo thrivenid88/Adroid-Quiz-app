@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome user name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Score Box -->
+    <TextView
+        android:id="@+id/scores_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="150.7 pts"
+        android:textSize="36sp"
+        android:background="@color/purple"
+
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Statistics Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingBottom="26dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Current Streak -->
+        <TextView
+            android:id="@+id/current_streak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current streak:"
+            android:textSize="14sp" />
+
+        <!-- Highest Streak -->
+        <TextView
+            android:id="@+id/highest_streak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest streak: 10"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/avg_time_spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg time spent: "
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Level Vocabulary Buttons -->
+    <GridLayout
+        android:id="@+id/vocabulary_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- A1 Button -->
+        <Button
+            android:id="@+id/button_a1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="A1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_columnWeight="1" />
+
+        <!-- A2 Button -->
+        <Button
+            android:id="@+id/button_a2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="A2"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_columnWeight="1" />
+
+        <!-- B1 Button -->
+        <Button
+            android:id="@+id/button_b1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="B1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_columnWeight="1" />
+
+        <!-- B2 Button -->
+        <Button
+            android:id="@+id/button_b2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="B2"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_columnWeight="1" />
+
+        <!-- C1 Button -->
+        <Button
+            android:id="@+id/button_c1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C1"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_columnWeight="1" />
+
+        <!-- C2 Button -->
+        <Button
+            android:id="@+id/button_c2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C2"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_columnWeight="1" />
+    </GridLayout>
+
+    <!-- Dictionary Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Open Dictionary Button -->
+        <Button
+            android:id="@+id/open_dictionary_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open Dictionary"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Add Word/Phrases Button -->
+        <Button
+            android:id="@+id/add_word_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add word/phrases"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>
